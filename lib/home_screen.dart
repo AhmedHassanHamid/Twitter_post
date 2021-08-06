@@ -13,7 +13,9 @@ class HomeScreen extends StatelessWidget {
        ),
        )
      ), 
-     body:ListView(
+     body:Container(
+       color: Color.fromRGBO(10, 10, 10 , 1),
+     child: ListView(
        children: [
          Column(
        crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,22 +31,25 @@ class HomeScreen extends StatelessWidget {
              ),
                Padding(
                  padding: const EdgeInsets.all(2.0),
-                 child: Text("User Name", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                 child: Text("User Name",  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
                ),
                Padding(
                  padding: const EdgeInsets.all(2.0),
-                 child: Text("@Username", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)),
+                 child: Text("@Username", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300, color: Colors.white)),
                ),
                Padding(
                  padding: const EdgeInsets.all(2.0),
-                 child: Text(". Aug 3", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)),
+                 child: Text(". Aug 3", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300, color: Colors.white)),
                ),
-               Icon(Icons.menu, color: Colors.grey)
+               Padding(
+                 padding: const EdgeInsets.all(8.0),
+                 child: Icon(Icons.menu, color: Colors.grey),
+               )
            ],
          ),
          Padding(
            padding: const EdgeInsets.all(19.0),
-           child: Text("How you doing?", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+           child: Text("How you doing?", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
          ),
          Container(
           
@@ -89,22 +94,22 @@ class HomeScreen extends StatelessWidget {
              ),
                Padding(
                  padding: const EdgeInsets.all(2.0),
-                 child: Text("User Name", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                 child: Text("User Name", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
                ),
                Padding(
                  padding: const EdgeInsets.all(2.0),
-                 child: Text("@Username", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)),
+                 child: Text("@Username", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300, color: Colors.white)),
                ),
                Padding(
                  padding: const EdgeInsets.all(2.0),
-                 child: Text(". Aug 3", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)),
+                 child: Text(". Aug 3", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300, color: Colors.white)),
                ),
                Icon(Icons.menu, color: Colors.grey)
            ],
          ),
          Padding(
            padding: const EdgeInsets.all(19.0),
-           child: Text("Ohh", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+           child: Text("Ohh", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
          ),
          Container(
           
@@ -149,22 +154,22 @@ class HomeScreen extends StatelessWidget {
              ),
                Padding(
                  padding: const EdgeInsets.all(2.0),
-                 child: Text("User Name", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                 child: Text("User Name", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
                ),
                Padding(
                  padding: const EdgeInsets.all(2.0),
-                 child: Text("@Username", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)),
+                 child: Text("@Username", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300, color: Colors.white)),
                ),
                Padding(
                  padding: const EdgeInsets.all(2.0),
-                 child: Text(". Aug 3", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)),
+                 child: Text(". Aug 3", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300, color: Colors.white)),
                ),
                Icon(Icons.menu, color: Colors.grey)
            ],
          ),
          Padding(
            padding: const EdgeInsets.all(19.0),
-           child: Text("LoL", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+           child: Text("LoL", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
          ),
          Container(
           
@@ -196,7 +201,7 @@ class HomeScreen extends StatelessWidget {
        ],
      )
        ],
-     ),
+     ),),
       
     );
   }
